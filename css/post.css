@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    padding: 10px;
+}
+
+.img {
+    max-width: 430px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.img img {
+    width: 100%;
+}
+
+
+/* -------- */
+
+.textcomment {
+    max-width: 430px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.textcomment .text {
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+    background: rgb(227, 227, 227);
+}
+
+.textcomment .text p {
+    color: rgb(58, 58, 58);
+    font-weight: 600;
+}
+
+
+/* --------- */
+
+.commentinput {}
+
+.commentinput form {
+    display: flex;
+}
+
+.commentinput form textarea {
+    border: 2px solid rgb(86, 86, 86);
+    padding: 10px;
+    width: 90%;
+    outline: none;
+}
+
+.commentinput form textarea::placeholder {
+    font-size: 1rem;
+}
+
+.commentinput form #send {
+    background: #000;
+    border: 2px solid rgb(86, 86, 86);
+    width: 20%;
+    color: azure;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+/* ---------- */
+
+.commenthouse {
+    padding: 10px;
+}
+
+.commentroom {}
+
+.commentbox {
+    background: rgba(0, 0, 0, 0.455);
+    width: max-content;
+    max-width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 18px 0px;
+    border: 1px solid rgb(91, 91, 91);
+}
+
+.commentdate {
+    background: rgb(237, 237, 237);
+    padding: 3px;
+}
+
+.commentdate p {
+    font-weight: 600;
+}
+
+.commenttext {
+    padding: 5px;
+}
+
+.commenttext p {
+    font-weight: 600;
+    color: aliceblue;
+    letter-spacing: 1px;
+}

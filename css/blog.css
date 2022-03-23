@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(103, 103, 103);
+}
+
+.header a {
+    text-decoration: none;
+    margin: 1% 3%;
+    position: relative;
+    padding: 0.5% 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.header a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3%;
+    top: 0;
+    left: 0;
+    background: #000;
+    transition: 0.4s;
+}
+
+.header a:hover::before {
+    background: rgba(0, 0, 0, 0.235);
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.247);
+}
+
+.header a span {
+    color: rgb(74, 74, 74);
+    transition: 0.2s;
+    font-size: 0.8rem;
+}
+
+.header a span:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+/* -------------- */
+
+.posthouse {}
+
+.postroom {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.postroom a {
+    margin: 13px 13px;
+    text-decoration: none;
+    position: relative;
+    border: 1px solid rgb(103, 103, 103);
+}
+
+.postroom a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    background: rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+.postroom a:hover::before {
+    background: rgba(0, 0, 0, 0.151);
+    width: 100%;
+    height: 100%;
+}
+
+.postroom a .postbox {
+    background: rgb(255, 255, 255);
+    padding: 3px 3px;
+    border-radius: 5px;
+}
+
+.posthead {
+    width: 200px;
+    border-bottom: 1px solid gray;
+}
+
+.posthead p {
+    text-align: center;
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.postcontent {}
+
+.article {
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.article p {
+    font-size: 0.8rem;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
